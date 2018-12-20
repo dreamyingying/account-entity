@@ -51,7 +51,7 @@ public class User extends BaseEntity {
     private String address;
 
     /**
-     * 状态【默认是1：正常；0是超级用户；】
+     * 状态【默认是1：正常；99:已删除；】
      */
     private Byte status;
 
@@ -79,8 +79,8 @@ public class User extends BaseEntity {
         this.name = name;
     }
 
-    public byte getSex() {
-        return sex;
+    public Byte getSex() {
+        return this.sex;
     }
 
     public void setSex(byte sex) {
@@ -119,11 +119,11 @@ public class User extends BaseEntity {
         this.address = address;
     }
 
-    public byte getStatus() {
+    public Byte getStatus() {
         return status;
     }
 
-    public void setStatus(byte status) {
+    public void setStatus(Byte status) {
         this.status = status;
     }
 

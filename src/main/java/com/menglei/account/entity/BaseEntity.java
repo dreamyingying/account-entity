@@ -21,7 +21,7 @@ public class BaseEntity implements Serializable {
      * 创建人和创建时间
      */
     private Long createTime;
-    private String creater;
+    private String creator;
 
     /**
      * 修改人和修改时间
@@ -50,12 +50,12 @@ public class BaseEntity implements Serializable {
         this.createTime = createTime;
     }
 
-    public String getCreater() {
-        return creater;
+    public String getCreator() {
+        return creator;
     }
 
-    public void setCreater(String creater) {
-        this.creater = creater;
+    public void setCreator(String creator) {
+        this.creator = creator;
     }
 
     public Long getUpdateTime() {
@@ -86,8 +86,8 @@ public class BaseEntity implements Serializable {
     public String toString() {
         return "BaseEntity{" +
                 "id=" + id +
-                "createTime=" + createTime +
-                ", creater='" + creater + '\'' +
+                ", createTime=" + createTime +
+                ", creator='" + creator + '\'' +
                 ", updateTime=" + updateTime +
                 ", updater='" + updater + '\'' +
                 ", description='" + description + '\'' +
